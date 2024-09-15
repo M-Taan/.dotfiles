@@ -1,0 +1,8 @@
+add_newline = false
+
+[character]
+success_symbol = "[->](fg:#00BBC0)"
+error_symbol = "[!->](fg:red)"
+
+[directory]
+style = "bold fg:244"
