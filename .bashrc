@@ -14,6 +14,6 @@ alias ll='ls -all'
 alias emacst='emacsclient -c -nw'
 alias emacs='emacsclient -c -a "emacs"'
 alias bye='shutdown now'
-alias arcdiff='EDITOR="emasclient -c -nw" arc diff'
+alias arcdiff='EDITOR="vim" arc diff'
 
 export PATH=~/.local/bin:$PATH
