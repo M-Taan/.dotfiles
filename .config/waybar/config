@@ -2,14 +2,16 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-right": ["tray", "network", "memory", "battery", "pulseaudio", "clock"],
     "hyprland/workspaces": {
+    "persistent-workspaces": {
+	"*": 5
+       },
 	"format": "{icon}",
 	"on-click": "activate",
 	"format-icons": {
 	    "urgent": "",
 	    "active": "",
 	    "default": ""
-	},
-	"all-outputs": false
+	}
     },
     "memory": {
 	"interval": 30,

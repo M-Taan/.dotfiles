@@ -1,0 +1,14 @@
+#!/bin/bash
+
+tmux new-session -s hbox-web -n Neo4j -d
+
+tmux send-keys -t Neo4j "cd ~/NEO4J_HOME_3.5_HBOX" Enter
+tmux send-keys -t Neo4j "./bin/neo4j console" Enter
+
+tmux new-window -t hbox-web:1 -n Figwheel
+tmux send-keys -t Figwheel "cd ~/workspace/rams/HBX003 && lein figwheel" Enter
+
+tmux new-window -t hbox-web:2 -n Frontend
+tmux send-keys -t Frontend "cd ~/workspace/rams/HBX003 && npx shadow-cljs watch app" Enter
+
+tmux attach -t hbox-web
